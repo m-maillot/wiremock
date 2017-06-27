@@ -110,7 +110,7 @@ public class JettyHttpServer implements HttpServer {
     }
 
     protected void finalizeSetup() {
-        jettyServer.setStopTimeout(0);
+        jettyServer.setStopTimeout(30000);
     }
 
     protected Server createServer(Options options) {
